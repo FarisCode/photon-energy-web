@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
-  --primary: #F6A235;
+  --primary: #F4B100;
   --light: #F6F7F8;
-  --dark: #1A2A36;
+  --dark: #000000;
 }
 
 .fw-medium {
@@ -537,5 +537,7 @@
 .footer .copyright a:hover {
   color: var(--primary);
 }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
