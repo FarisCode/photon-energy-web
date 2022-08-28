@@ -529,35 +529,40 @@
                         <h6 class="text-primary">Free Quote</h6>
                         <h1 class="mb-4">Book A Free Survey</h1>
                         <p class="mb-4 pb-2">Book a free survey of your site and get a quote.</p>
-                        <form>
+                        <form name="g-sheet">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name"
+                                    <input type="text" name="Name" required class="form-control border-0" placeholder="Your Name"
                                         style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email"
-                                        style="height: 55px;">
+                                    <input type="email" name="Email" required class="form-control border-0"
+                                        placeholder="Your Email" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile"
-                                        style="height: 55px;">
+                                    <input type="text" name="Contact" required class="form-control border-0"
+                                        placeholder="Your Mobile" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
+                                    <select name="Service Type" class="form-select border-0" style="height: 55px;">
                                         <option selected>Select A Service</option>
                                         <option value="ongrid">On-Grid</option>
                                         <option value="offgrid">Off-Grid</option>
                                         <option value="hybrid">Hybrid</option>
                                     </select>
                                 </div>
+                                <input hidden name="Status" value="New" />
                                 <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Note"></textarea>
+                                    <textarea name="Special Note" class="form-control border-0"
+                                        placeholder="Special Note"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
                                 </div>
                             </div>
+                            <span id="response-msg"
+                                style="margin: 12px; font-size: 1.2em; display: inline-block; color: black;">
+                            </span>
                         </form>
                     </div>
                 </div>
